@@ -38,11 +38,13 @@ button {
 }
 
 .hint {
+  display: none;
   margin-top: 16px;
   opacity: 0;
   transition: .3s opacity ease;
 }
 
 .hint.active {
+  display: block;
   opacity: 1;
 }

@@ -1,5 +1,13 @@
 // Select all the tiles
 const tiles = document.querySelectorAll('td');
+const showHint = document.getElementById('show-hint');
+const hintMessage = document.getElementById('hintMessage');
+
+showHint.addEventListener('click', () => {
+  console.log('clicked');
+  hintMessage.classList.toggle('active');
+  console.log(hintMessage.classList);
+});
 
 // Check if a tile has an empty neighbour
 const canMove = (tile) => {
